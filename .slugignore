@@ -1,5 +1,6 @@
+*.csv
 *.ipynb
 __pycache__/
-*.csv
-datasets/
-*.log
+.git/
+.venv/
+dataset/
