@@ -1,1 +1,1 @@
-web: uvicorn app:app --host=0.0.0.0 --port=${PORT}
+web: tensorflow_model_server --port=8500 --rest_api_port=$PORT --model_name=hearts-model --model_base_path=/models/hearts-model
