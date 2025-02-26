@@ -1,6 +1,6 @@
 FROM tensorflow/serving:latest
 
-COPY ./output/serving_model /models/hearts-model
+COPY ./serving_model /models/hearts-model
 
 ENV MODEL_NAME=hearts-model
 ENV PORT=8501
