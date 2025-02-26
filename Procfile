@@ -1,1 +1,1 @@
-web: tensorflow_model_server --port=8500 --rest_api_port=$PORT --model_name=hearts-model --model_base_path=/models/hearts-model
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker app:app
