@@ -1,5 +1,5 @@
 # Gunakan TensorFlow Serving sebagai base image
-FROM tensorflow/serving:latest
+FROM tensorflow/serving:2.7.0
 
 # Salin model ke dalam container
 COPY ./serving_model /models/hearts_model
